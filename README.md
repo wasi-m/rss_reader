@@ -1,17 +1,17 @@
 # Rss-Reader
 A simple RSS Reader using Python Django
 
-RSS-Reader is a web based platform that allows users to be get the live rss feed from the entered URL.
+RSS-Reader is a web based platform that allows users to get the live rss feed from the entered URL.
 
 Users can Enter the link on https://rssreaderdemo.herokuapp.com/ and the get the list of all feeds.
-Thne Users can also click on individual feed to get the details of feed.
+Then Users can also click on individual feed to get the details of feed.
 
 
 Project Details
 --------------------------------------------
 - Backend - Python/Django
 - Database - SQLite3 (Not Used)
-- Frontend - Bootstrap, HTML, CSS, JavaScript, Jquery
+- Frontend - Bootstrap, HTML, CSS, JavaScript, Jquery (Free package from creative tim)
 - Hosted on - Heroku
 - website - https://rssreaderdemo.herokuapp.com/
 

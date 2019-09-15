@@ -1,0 +1,1 @@
+web: gunicorn rss_reader.wsgi --log-file -

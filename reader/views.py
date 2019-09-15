@@ -10,7 +10,6 @@ import re
 
 def home(request):
     if request.method == 'POST':
-        print("in View")
         form = UrlForm(request.POST)
 
         if form.is_valid():
@@ -55,6 +54,5 @@ def detail(request, link):
         'title' : soup.find("meta",  property="og:title")["content"],
         'description' : soup.find("meta",  property="og:description")["content"]
     }
-    print(data)
 
     return render(request, 'detail.html', data)

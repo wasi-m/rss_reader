@@ -1,0 +1,66 @@
+<!-- allresults.html -->
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand text-center">
+            <h1>Simple RSS Reader</h1>
+            <h3 class="title text-center">RSS Reader at Fingertips</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <div class="content">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">All RSS Feeds</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="toolbar">
+                            <!--        Here you can write extra buttons/actions for the toolbar              -->
+                        </div>
+                        <table id="summary_table" class="table table-striped table-bordered display" style="width:100%">
+                            <thead>
+                            <tr >
+                                <th>Title</th>
+                                <th> Short Description</th>
+                                <th>Published at</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if data %}
+                                <p>In Data</p>
+                                {% for feed in data %}
+                                    <tr>
+                                        <td><a href="{{feed.link}}">{{ feed.title }}</a></td>
+                                        <td>
+                                            {{ feed.description }}
+                                        </td>
+                                        <td>{{ feed.published }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% endif %} 
+                            </tbody>
+                        </table>
+                    </div><!-- end card body-->
+                </div><!--  end card  -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}

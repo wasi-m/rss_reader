@@ -41,3 +41,9 @@ $ python manage.py migrate
 $ python manage.py runserver
 ```
 6. Open http://127.0.0.1:8000 in browser
+
+
+Future Scope
+--------------------------------------------
+1. Creating Users for tracking and saving the RSS links.
+2. Bookmarking the RSS feeds.

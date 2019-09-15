@@ -40,4 +40,4 @@ $ python manage.py migrate
 ```
 $ python manage.py runserver
 ```
-6. Opne http://127.0.0.1:8000 in browser
+6. Open http://127.0.0.1:8000 in browser

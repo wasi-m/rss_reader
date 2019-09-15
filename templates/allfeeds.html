@@ -1,7 +1,7 @@
 <!-- allresults.html -->
 {% extends 'base.html' %}
 
-{% block title %}Dashboard{% endblock %}
+{% block title %}All RSS Feeds{% endblock %}
 
 {% block content %}
   <div class="page-header header-filter clear-filter purple-filter" data-parallax="true">
@@ -34,13 +34,12 @@
                             <thead>
                             <tr >
                                 <th>Title</th>
-                                <th> Short Description</th>
+                                <th>Short Description</th>
                                 <th>Published at</th>
                             </tr>
                             </thead>
                             <tbody>
                             {% if data %}
-                                <p>In Data</p>
                                 {% for feed in data %}
                                     <tr>
                                         <td><a href="{{feed.link}}">{{ feed.title }}</a></td>
